@@ -35,7 +35,7 @@ function App() {
                     const cardKey = getCardKey(col, row, name)
                     const isFlipped = flippedCards[cardKey] || false
                     const backgroundStyle = {
-                      backgroundImage: `url(${peace})`, // Replace with your actual image path
+                      backgroundImage: `url(${peace})`,
                       backgroundSize: `${totalCols * 100}% ${totalRows * 100}%`,
                       backgroundPosition: `${(col / (totalCols - 1)) * 100}% ${(row / (totalRows - 1)) * 100}%`
                     }
