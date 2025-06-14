@@ -3,7 +3,26 @@ import './App.css'
 import { groupedNames } from './Names'
 import peace from './assets/peace.jpg'
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
 function App() {
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAihhCZSGsyOKES5pIxs-pXUxrUlJkC3fE",
+    authDomain: "wedding-1f112.firebaseapp.com",
+    projectId: "wedding-1f112",
+    storageBucket: "wedding-1f112.firebasestorage.app",
+    messagingSenderId: "589360708408",
+    appId: "1:589360708408:web:60212e16925cff4e8e9fcd"
+  };
+
+  // Initialize Firebase
+  initializeApp(firebaseConfig);
+
   const [flippedCards, setFlippedCards] = useState<Record<string, boolean>>({})
 
   const getCardKey = (i: number, j: number, value: string) => {
