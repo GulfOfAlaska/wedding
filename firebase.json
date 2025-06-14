@@ -1,7 +1,6 @@
 {
   "hosting": {
-  "site": "peanutbarter",
-    "public": "public",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
